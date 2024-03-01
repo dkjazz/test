@@ -1,0 +1,8 @@
+// https://rhonabwy.com/2023/02/10/creating-an-xcframework/
+
+xcodebuild -create-xcframework \
+    -library "./libvosk.xcframework/ios-arm64_armv7_armv7s/libvosk.a" \
+    -headers "./libvosk.xcframework/ios-arm64_armv7_armv7s/Headers" \
+    -library "./libvosk.xcframework/ios-arm64_x86_64-simulator/libvosk.a" \
+    -headers "./libvosk.xcframework/ios-arm64_x86_64-simulator/Headers" \
+    -output "./build/libvosk.xcframework"
