@@ -1,0 +1,4 @@
+module libvosk {
+    header "libvosk.h"
+    export *
+}
